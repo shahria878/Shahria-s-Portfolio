@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hire</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <style>
+    :root{
+    --accent-color: #a07797;
+}
+section[class^="container"] {
+    padding: 4rem 2rem;
+}
+@media screen and (min-width: 1024px) {
+  section[class^="container"] {
+     padding: 4rem;
+  } 
+  nav [class^="container"] {
+    padding: 0 4rem;
+ }  
+}
+
+section:not(:first-of-type){
+    text-align: center;
+}
+
+section:nth-child(2n) {
+    background-color: #a07797;
+}
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+section .card, 
+  .btn-outline-dark {
+    border: 2px solid #000000;
+    box-shadow: 4px 4px #000000;
+    transition: all 0.4s;
+  }
+  .btn-outline-dark:hover  {
+    box-shadow: 4px 4px var(--accent-color);
+  }
+
+.navbar {
+    background-color: #ffffff;
+}
+
+
+.navbar-nav .nav-link{
+    color: #000000;
+    font-size: 1.1rem;
+    transition: all 0.5s;
+}
+.navbar-nav .nav-link:hover {
+    color: var(--accent-color);
+}
+@media screen and (min-width: 1024px) {
+  .navbar-nav .nav-item{
+    padding: 0 1rem;
+  }
+  .navbar-brand {
+    font-size: 1.5rem;
+   }
+}
+
+section.hero {
+    
+    padding-top: 72px;
+}
+
+@media screen and (max-width: 576px) {
+    section.hero {
+      text-align: center;
+    }
+    section.hero img{
+        width: 70%;
+    }
+  }
+  section.services i{
+    font-size: 2rem;
+    margin: 1rem auto 0;
+    border: 2px solid #000000;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color);
+  }
+
+  section .card, 
+  .btn-outline-dark {
+    border: 2px solid #000000;
+    box-shadow: 4px 4px #000000;
+  }
+  .btn-outline-dark:hover  {
+    box-shadow: 4px 4px var(--accent-color);
+  }
+  section .card{
+    max-width: 22rem;
+    margin-inline: auto;
+  }
+
+  @media screen and (min-width: 1024px) {
+    section.about .container,
+    section.testimonials .container {
+        width: 60%;
+      }
+  }
+
+  section.projects .card {
+    max-width: 17rem;
+    text-align: left;
+  }
+
+  section.project .card img{
+    max-width: 70%;
+    margin: 1rem auto;
+  }
+
+  section.testimonials .carousel-control-prev, 
+  .carousel-control-next {
+    width: 5%;
+  }
+
+  section.testimonials .carousel-item p{
+    max-width: 80%;
+    border-left: 5px solid var(--accent-color);
+    padding-left: .5rem;
+  }
+  section.testimonials .carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section.testimonials .carousel.carousel-fade .carousel-item {
+    transition: opacity 0.5s;
+  }
+
+  section.contact .social-media a {
+    padding: 0 0.5rem;
+    font-size: 1.3rem;
+  }
+
+ 
+
+
+  </style>
+
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+        <div class="container-lg">
+          <a class="navbar-brand fw-bold" href="#"><i class="bi bi-search"></i>HIRE</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonials">Testimonials</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link d-lg-none" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <a class="btn btn-outline-dark d-none d-lg-block" href="#contact">Let's Talk</a>
+          </div>
+        </div>
+      </nav>
+
+      <section class="hero" id="hero">
+        <div class="container-lg">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <h6>Hello, I'm <br>
+                    <h1 class="display-2 fw-bold">Shahria Amin</h1>
+                    <p>Website Developer
+
+                    </p>
+                     </h6>
+                    <a href="#projects" class="btn btn-outline-dark">My Work</a>
+                    <a href="#contact" class="btn btn-outline-dark">Hire Me</a>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <img src="shahria.jpeg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-3">Services</h2>
+            <div class="row">
+                <div class="col-lg col-sm-6 mt-4">
+                    <div class="card">
+                        <i class="bi bi-database"></i>
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold">Database Management</h5>
+                          <p class="card-text">Efficiently design, manage, and optimize databases for secure and scalable applications. Ensure data integrity and seamless performance.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-4 mt-4">
+                    <div class="card">
+                        <i class="bi bi-code-slash"></i>
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold">Development</h5>
+                          <p class="card-text">Build robust, high-performing applications using modern technologies. From backend logic to frontend experiences, we turn ideas into reality.</p>  
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-4 mt-4">
+                    <div class="card">
+                        <i class="bi bi-laptop"></i>
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold">Web Design</h5>
+                          <p class="card-text">Create visually stunning and user-friendly websites with responsive designs. Enhance user engagement with seamless UI/UX.</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-3">About Me</h2>
+            <p>
+                Hey I am Shahria. I have worked with databases including Python and Java.
+                Currently, I am developing a website that mainly focuses on a university 
+                management system. Besides this, I also solve programming problems from 
+                time to time. If you have any projects and you are impressed with my work, 
+                you can hire me. Here is my work.
+            </p>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-3">Projects</h2>
+            <div class="row">
+                <div class="col-lg col-sm-6 mt-4">
+                    <div class="card">
+                        <img src="Dbms2.jpeg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Project 1</h5>
+                            <p class="card-text">This is my Database Management System project. It's mainly works on the online food delivery management system's database. Here are the ER diagram and schema diagram to manage its data server..............</p>
+                            <a href="project1.html" class="btn btn-outline-dark">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg col-sm-6 mt-4">
+                    <div class="card">
+                        <img src="python2.jpeg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Project 2</h5>
+                            <p class="card-text">This is a university management website. Python, HTML, CSS, and JavaScript have been used here, and Django has been chosen as the framework. Its functions are currently working..............</p>
+                            <a href="App-project.html" class="btn btn-outline-dark">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg col-sm-6 mt-4">
+                    <div class="card">
+                        <img src="java.jpeg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Project 3</h5>
+                            <p class="card-text">Here is my java project.Mainly it is a Hotal Reservation Management System website designed to streamline bookings, manage reservations efficiently, and provide a seamless user experience..........</p>
+                            <a href="project3.html" class="btn btn-outline-dark">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg col-sm-6 mt-4">
+                    <div class="card">
+                        <img src="c++.jpeg" class="card-img-top" alt="Project 4">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Project 4</h5>
+                            <p class="card-text">This is my first project, where I have designed a simple calculator. There is a video here that has been provided as a sample................</p>
+                            <a href="project4.html" class="btn btn-outline-dark">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+      <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-3">Testimonials</h2>
+            <div id="carouselExample" class="carousel slide carousel-dark carousel-fade">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <p>"Working with Shahria Amin was a great experience! Their expertise in Django and 
+                      web development helped bring our university management system to life. Highly 
+                      recommended! – John Doe"</p>
+                    <h5>Shahria Amin</h5>
+                  </div>
+                  <div class="carousel-item">
+                    <p>"Shahria Amin is a highly skilled developer who delivers quality work on time. 
+                      Their ability to solve complex problems and build efficient systems is 
+                      impressive! – Sarah Williams"</p>
+                      <h5>Shahria Amin</h5>
+                  </div>
+                  <div class="carousel-item">
+                    <p>"Shahria Amin exceeded my expectations! Their work was efficient, 
+                      and they maintained clear communication throughout the project.
+                       – Michael Smith"</p>
+                      <h5>Shahria Amin</h5>
+                  </div>
+                    
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-3">Contact Me</h2>
+            <div class="row">
+                <div class="col-sm-4 mt-4">
+                    <a href="https://www.gmail.com"><i class="bi bi-envelope-fill"></i> shahriaamin@gmail.com</a>
+                </div>
+                <div class="col-sm-4">
+                    <div class="social-media">
+                        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <a href="tel:123456"><i class="bi bi-telephone-fill"></i> Helpline +123456</a><br>
+                    <a href="https://www.whatsapp.com"><i class="bi bi-chat-left-text-fill"></i> Send a message</a>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <footer class="text-center p-3 bg-body-tertiary">
+        <div>&copy; 2025. All Rights Reserved.</div>
+      </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+    crossorigin="anonymous"></script>
+  </body>
+
+</html>
